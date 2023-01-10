@@ -22,17 +22,18 @@ const Header = () => {
             </div>
             
             <div className='me'>
+              <div className='header_socials'>
+                <a href="https://www.linkedin.com/in/imani-muhammad-graham-424b4a127/" className='social__img' target='_blank'><FiLinkedin/></a>
+                <a href="https://github.com" className='social__img' target='_blank'><FaGithub/></a>        
+              </div>
+
               <a href="#contact">
-                <img src={pro_pic} alt="me" />
-              </a>              
-            </div>
-
-            <a href="#contact" className='scroll__down'>-- Contact Me --</a>
-
-            <div className='header_socials'>
-              <a href="https://www.linkedin.com/in/imani-muhammad-graham-424b4a127/" target='_blank'><FiLinkedin/></a>
-              <a href="https://github.com" target='_blank'><FaGithub/></a>        
-          </div>
+                <img  className='header_img' src={pro_pic} alt="me" />
+              </a>    
+              
+              <a href="#contact" className='scroll__down social__img'>-- Contact Me --</a>
+          
+            </div>            
 
         </div>
     </header>    

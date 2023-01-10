@@ -11,14 +11,17 @@ const Nav = () => {
   // Implement useState hook to hav nav bar update based on current view
   const [activeNav, setActiveNav] = useState('#')
   return (
-    <nav>
-      <a href="#" onClick={() => setActiveNav('#')} className = {activeNav ==='#' ? 'active' : ''}><FaHome/></a>
-      <a href="#about" onClick={() => setActiveNav('#about')} className = {activeNav ==='#about' ? 'active' : ''}><FcAbout/></a>
-      <a href="#exp" onClick={() => setActiveNav('#exp')} className = {activeNav ==='#about' ? 'exp' : ''}><MdBuildCircle/></a>
-      <a href="#portfolio" onClick={() => setActiveNav('#portfolio')} className = {activeNav ==='#portfolio' ? 'active' : ''}><GiBookshelf/></a>
-      <a href="#contact" onClick={() => setActiveNav('#contact')} className = {activeNav ==='#contact' ? 'active' : ''}><AiFillMessage/></a>
-      
-    </nav>
+    <div className='container nav_bar'>
+    
+      <nav>
+        <a href="#" onClick={() => setActiveNav('#')} className = {activeNav ==='#' ? 'active' : ''}><FaHome/></a>
+        <a href="#about" onClick={() => setActiveNav('#about')} className = {activeNav ==='#about' ? 'active' : ''}><FcAbout/></a>
+        <a href="#exp" onClick={() => setActiveNav('#exp')} className = {activeNav ==='#about' ? 'exp' : ''}><MdBuildCircle/></a>
+        <a href="#portfolio" onClick={() => setActiveNav('#portfolio')} className = {activeNav ==='#portfolio' ? 'active' : ''}><GiBookshelf/></a>
+        <a href="#contact" onClick={() => setActiveNav('#contact')} className = {activeNav ==='#contact' ? 'active' : ''}><AiFillMessage/></a>
+        
+      </nav>
+    </div>
   )
 }
 

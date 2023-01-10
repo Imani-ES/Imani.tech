@@ -31,15 +31,20 @@ header{
 
 /*======Image===========*/
 .me{
-    background: var(--palatte_1);
-    width: 22rem;
-    height: 30rem;
-    position: absolute;
+    display: inline-block;
     margin-top: 3rem;
-    left: 35%;
     justify-content: center;
 }
 
+.header_img{
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+}
+.social__img{
+    background: var(--palatte_1);
+    border-radius: 3rem;
+}
 
 /*========= scroll down ===========*/
 
@@ -59,19 +64,17 @@ header{
     header{
         height: 100vh;
     }
-     /*======Image===========*/
-     .me{
-        width: 20rem;
-        height: 30rem;
-        margin-top: 3rem;
-        left: 20%;
-    }
+     
 
     /*====== Social ===========*/
     .header_socials{
         gap: .75rem;
         left: 1rem;
         bottom: 6rem;
+    }
+
+    .header_img{
+        width: 60%;
     }
 
     /*========= scroll down ===========*/
@@ -91,13 +94,9 @@ header{
     }
 
     /*======Image===========*/
-    .me{
-        width: 18rem;
-        height: 23rem;
-        margin-top: 3rem;
-        left: 17%;
+    .header_img{
+        width: 70%;
     }
-
     /*====== Social ===========*/
     .header_socials{
         gap: .75rem;
