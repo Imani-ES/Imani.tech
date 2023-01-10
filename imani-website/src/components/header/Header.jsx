@@ -11,6 +11,7 @@ const Header = () => {
   return (
     <header>
         <div className='container header__container'>
+
             <h5>Hello, I'm</h5>
             <h1>Imani Muhammad-Graham</h1>
             <h5 className='text-light'></h5>
@@ -23,11 +24,10 @@ const Header = () => {
             <div className='me'>
               <a href="#contact">
                 <img src={pro_pic} alt="me" />
-              </a>
-              
+              </a>              
             </div>
 
-            <a href="#contact" className='scroll__down'>Contact Me!</a>
+            <a href="#contact" className='scroll__down'>-- Contact Me --</a>
 
             <div className='header_socials'>
               <a href="https://www.linkedin.com/in/imani-muhammad-graham-424b4a127/" target='_blank'><FiLinkedin/></a>
