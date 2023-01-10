@@ -1,8 +1,20 @@
 import React from 'react'
-
+import './nav.css'
+import {FaHome} from 'react-icons/fa'
+import {FcAbout} from 'react-icons/fc'
+import {AiFillMessage} from 'react-icons/ai'
+import {MdBuildCircle} from 'react-icons/md'
+import {GiBookshelf} from 'react-icons/gi'
 const nav = () => {
   return (
-    <div>nav</div>
+    <nav>
+      <a href="#header"><FaHome/></a>
+      <a href="#about"><FcAbout/></a>
+      <a href="#exp"><MdBuildCircle/></a>
+      <a href="#portfolio"><GiBookshelf/></a>
+      <a href="#contact"><AiFillMessage/></a>
+      
+    </nav>
   )
 }
 

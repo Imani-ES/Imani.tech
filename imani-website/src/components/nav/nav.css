@@ -1,0 +1,28 @@
+nav{
+    width:max-content;
+    background: var(--palatte_1);
+    display: block;
+    z-index: 2;
+    left: 40%;
+    position: fixed;
+    translate: translateX(-50%);
+    bottom: 2rem;
+    display: flex;
+    gap: .75rem;
+    padding: .7rem 1.7rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+    background: rgba(0,0,0,.4);
+}
+
+nav a{
+    background: transparent;
+    padding: 1rem;
+    color: var(--palatte_4);
+    display: flex;
+    border-radius: 1rem;
+}
+
+nav a:hover{
+    background: rgba(0,0,0,.4);
+}
