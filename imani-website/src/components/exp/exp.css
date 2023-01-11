@@ -1,0 +1,49 @@
+.exp__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:2rem;
+}
+
+.exp__container > div{
+    background: var(--palatte_2);
+    border-radius: 2rem;
+    padding: 2.4rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.exp__container > div:hover {
+    background: rgba(0,0,0,.2);
+    cursor: pointer;
+}
+
+.exp__container > div h3{
+    text-align: center;
+    color: var(--palatte_4);
+    margin-bottom: 2rem;
+}
+
+.exp_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+    
+}
+.exp_details{
+    /* display: flex; */
+    text-align: center;
+}
+
+.exp_details:hover{
+    color: var(--palatte_4);
+}
+
+.check{
+    color: var(--palatte_4);
+}
+.skill{
+    display: flex;
+    gap: 1rem;
+}
+
