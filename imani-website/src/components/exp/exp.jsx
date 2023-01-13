@@ -21,12 +21,11 @@ const Exp = () => {
             </article>
 
             <article className='exp_details'>
+              <MdOutlineVerified className='check' />
               <div className='skill'>
-                <MdOutlineVerified className='check' />
                 <h4>Skill</h4>
+                <small>Skill level</small>                
               </div>
-              
-              <small>Skill level</small>
             </article>
 
             <article className='exp_details'>

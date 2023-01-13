@@ -1,16 +1,18 @@
 .exp__container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap:2rem;
+    gap: 2rem;
 }
 
 .exp__container > div{
     background: var(--palatte_2);
     border-radius: 2rem;
-    padding: 2.4rem 5rem;
+    padding: 2.4rem 4rem;
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
+    /* width: 80%; */
+    
 }
 
 .exp__container > div:hover {
@@ -31,8 +33,11 @@
     
 }
 .exp_details{
-    /* display: flex; */
-    text-align: center;
+    display: flex;
+    /* text-align: center; */
+    /* display: grid; */
+    /* grid-template-columns: 1fr 3fr; */
+    gap: .3rem;
 }
 
 .exp_details:hover{
@@ -42,8 +47,23 @@
 .check{
     color: var(--palatte_4);
 }
-.skill{
-    display: flex;
-    gap: 1rem;
-}
 
+
+/* ==================MEDIA QUERIES (Medium devices)===============*/
+
+@media screen and (max-width: 1024px) {
+    .exp__container{
+        grid-template-columns: 1fr;
+    }
+ }
+ 
+ /* ==================MEDIA QUERIES (Small devices)===============*/
+ 
+ @media screen and (max-width: 600px) {
+     .exp__container{
+        width: 80%;
+        grid-template-columns: 1fr;
+     }
+ 
+ 
+ }
