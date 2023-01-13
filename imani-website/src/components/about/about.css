@@ -1,6 +1,6 @@
 .about__container{
     display: grid;
-    grid-template-columns: 35% 50%;
+    grid-template-columns: 30% 50%;
     gap: 15%;
 }
 
@@ -87,6 +87,9 @@
 /* ==================MEDIA QUERIES (Small devices)===============*/
 
 @media screen and (max-width: 600px) {
+    .about__container{
+        padding: 5%;
+    }
     .about__me{
         width: 60%;
         margin: 2rem auto 4rem;

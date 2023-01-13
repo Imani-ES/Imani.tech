@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    
 }
 
 .exp__container > div{
@@ -61,8 +62,8 @@
  
  @media screen and (max-width: 600px) {
      .exp__container{
-        width: 80%;
         grid-template-columns: 1fr;
+        padding: 5%;
      }
  
  
