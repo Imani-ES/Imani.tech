@@ -1,6 +1,7 @@
 import React from 'react'
 import './contact.css'
 import {SiMinutemailer} from 'react-icons/si'
+import {FiLinkedin} from 'react-icons/fi'
 
 function copy_name_ToClipboard() {
   navigator.clipboard.writeText('Imani Muhammad-Graham');
@@ -22,10 +23,10 @@ const Contact = () => {
             <a href="mailto:imanim454@gmail.com">Send a Message</a>
           </article>
           <article className="contact_option" onClick={copy_name_ToClipboard}>
-            <SiMinutemailer className='contact_icon'/>
+            <FiLinkedin className='contact_icon'/>
             <h2>Linkedin</h2>
-            <h5 >Imani Muhammad-Graham</h5>
-            <a href="https://www.linkedin.com/in/imani-muhammad-graham-424b4a127/">Send a Message</a>
+            {/* <h5 >Imani Muhammad-Graham</h5> */}
+            <a href="https://www.linkedin.com/in/imani-muhammad-graham-424b4a127/">Reach Out</a>
           </article>
         </div>
         
