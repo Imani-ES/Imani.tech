@@ -1,14 +1,30 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './contact.css'
 import {SiMinutemailer} from 'react-icons/si'
 import {FiLinkedin} from 'react-icons/fi'
+import emailjs from 'emailjs-com'
 
 function copy_name_ToClipboard() {
   navigator.clipboard.writeText('Imani Muhammad-Graham');
   alert("You copied my Linkedin Username!");
 };
 
+
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_g21dujy', 'template_3xlgl3h', form.current, '3lQE5T0vmZXqVmxKC')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+    e.target.reset();
+  };
   return (
     <section id = "contact">
       <h5>Get In Touch</h5>
@@ -30,7 +46,7 @@ const Contact = () => {
           </article>
         </div>
         
-        <form className='contact_form' action="">
+        <form className='contact_form' ref={form} onSubmit={sendEmail}>
           <input type="text" name='name' placeholder='Your full name' required />
           <input type="text" name='email' placeholder='Your email' required />
           <textarea name="message" placeholder='Type your message here'  required></textarea>
