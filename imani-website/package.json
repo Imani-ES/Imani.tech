@@ -1,5 +1,6 @@
 {
   "name": "imani-website",
+  "homepage": "https://imani.tech/test_portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
