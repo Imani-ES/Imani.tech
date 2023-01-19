@@ -2,6 +2,8 @@ import React from 'react'
 import './exp.css'
 import {MdOutlineVerified} from 'react-icons/md'
 
+import Slider from '../sliding_window/Slider'
+
 const Exp = () => {
   return (
     <section id = "exp">
@@ -117,6 +119,10 @@ const Exp = () => {
         </div>
 
       </div>
+      <div className="slide_container">
+        <Slider/> 
+      </div>
+      
     </section>
   )
 }
