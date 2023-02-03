@@ -28,6 +28,29 @@
     background: rgba(0,0,0,.8);
     transition: var(--transition);
 }
+/* ================ SLIDER CONTENT ================== */
+.slider_content{
+    display: flex;
+    /* flex-direction: row; */
+    /* height: 100%;
+    width: 100%; */
+    gap: .5rem;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+.slider_item{
+    width: 300px;
+    display: inline-block;
+    background: var(--palatte_2);
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    gap: 1rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+}
 
 /* ==================MEDIA QUERIES (Medium devices)===============*/
 
